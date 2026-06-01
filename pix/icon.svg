@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="12" y="12" width="104" height="104" rx="18" fill="#0F6CBF"/>
+
+  <!-- Checklist lines -->
+  <rect x="34" y="34" width="10" height="10" rx="2" fill="white"/>
+  <path d="M36 39L39 42L44 36" stroke="#0F6CBF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="36" width="42" height="6" rx="3" fill="white" opacity="0.95"/>
+
+  <rect x="34" y="56" width="10" height="10" rx="2" fill="white"/>
+  <path d="M36 61L39 64L44 58" stroke="#0F6CBF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="58" width="34" height="6" rx="3" fill="white" opacity="0.95"/>
+
+  <rect x="34" y="78" width="10" height="10" rx="2" fill="white"/>
+  <path d="M36 83L39 86L44 80" stroke="#0F6CBF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="80" width="46" height="6" rx="3" fill="white" opacity="0.95"/>
+
+  <!-- Rubric / score badge -->
+  <circle cx="96" cy="96" r="16" fill="#28A745"/>
+  <text x="96" y="101" text-anchor="middle" font-size="14" font-family="Arial, sans-serif" font-weight="bold" fill="white">3</text>
+
+</svg>

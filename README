@@ -1,0 +1,99 @@
+# Moodle Minimum Standards Activity Module
+
+A custom Moodle activity module for quality assurance, course standards checking, and reflective course review.
+
+## Features
+
+### Minimum Standards Checklist
+
+- 10 essential checklist items
+- 3 desirable checklist items
+- Notes area
+- Timestamp tracking
+- Moodle help buttons
+- Role-based editing permissions
+- Activity status indicators on course page
+
+### Self Reflection Rubric
+
+- 9 rubric elements
+- 0–3 scoring
+- Automatic score totals
+- Teacher/manager visibility controls
+
+### Moodle Integration
+
+- Moodle 4.5 and Moodle 5 compatible
+- Bootstrap 5 UI styling
+- Moodle capability system
+- Moodle events/logging support
+- Responsive design
+- SVG activity icon
+
+---
+
+## Requirements
+
+- Moodle 4.5+
+- PHP 8.1+
+- MariaDB/MySQL
+
+---
+
+## Installation
+
+1. Copy the plugin into:
+
+mod/minstandards
+
+2. Visit:
+
+
+Site administration → Notifications
+
+
+3. Complete the installation.
+
+---
+
+## Development
+
+Recommended tools:
+
+* Docker
+* Moosh
+* Xdebug
+
+Useful commands:
+
+php admin/cli/upgrade.php
+php admin/cli/purge_caches.php
+
+---
+
+## Plugin Structure
+
+mod/minstandards/
+
+amd/
+classes/
+db/
+lang/
+pix/
+templates/
+
+index.php
+lib.php
+mod_form.php
+view.php
+version.php
+
+---
+
+## License
+
+GPL v3 or later.
+
+Copyright (C) 2026 Dumfries and Galloway College
+
+

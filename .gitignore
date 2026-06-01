@@ -1,0 +1,41 @@
+# Moodle cache/temp
+.cache/
+temp/
+trashdir/
+sessions/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# PHPUnit
+phpunit.xml
+
+# Moodle generated
+_build/
+coverage/
+
+# Backup files
+*.bak
+*.swp
+*~
+
+# Docker overrides
+docker-compose.override.yml
+.env
+
+# Mac/Linux
+*.pid
