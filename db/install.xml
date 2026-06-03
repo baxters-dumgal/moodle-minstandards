@@ -141,10 +141,10 @@
                 <FIELD NAME="completion" TYPE="int" LENGTH="1"
                        NOTNULL="true" DEFAULT="0"/>
 
-                <FIELD NAME="assessment" TYPE="int" LENGTH="1"
+                <FIELD NAME="assessment_rubric" TYPE="int" LENGTH="1"
                        NOTNULL="true" DEFAULT="0"/>
 
-                <FIELD NAME="accessibility" TYPE="int" LENGTH="1"
+                <FIELD NAME="accessibility_rubric" TYPE="int" LENGTH="1"
                        NOTNULL="true" DEFAULT="0"/>
 
                 <FIELD NAME="digitaltools" TYPE="int" LENGTH="1"
