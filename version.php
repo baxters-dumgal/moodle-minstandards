@@ -26,11 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_minstandards';
-<<<<<<< HEAD
 $plugin->version   = 2026060212;
-=======
-$plugin->version   = 2026060211;
->>>>>>> da01176dd411e925868f228838323f6d1dc64df8
 $plugin->requires  = 2024100700; // Moodle 4.5+
 $plugin->maturity  = MATURITY_ALPHA;
 $plugin->release   = '0.1';
