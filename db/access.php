@@ -5,6 +5,22 @@ defined('MOODLE_INTERNAL') || die();
 $capabilities = [
 
     /*
+     * Add the activity
+     */
+    'mod/minstandards:addinstance' => [
+
+        'captype' => 'read',
+
+        'contextlevel' => CONTEXT_MODULE,
+
+        'archetypes' => [
+            'teacher' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW
+        ]
+    ],
+
+    /*
      * View the activity
      */
     'mod/minstandards:view' => [

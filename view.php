@@ -390,7 +390,7 @@ if (
 echo $OUTPUT->header();
 
 echo $OUTPUT->heading(
-    get_string('checklisttab', 'minstandards')
+    get_string('standardsrubricheader', 'minstandards')
 );
 
 $tabs = [];
@@ -470,6 +470,7 @@ echo html_writer::end_tag('ul');
 
 if ($tab === 'guidance') { 
 
+
     /*
     |--------------------------------------------------------------------------
     | Guidance accordion
@@ -487,7 +488,7 @@ if ($tab === 'guidance') {
     |--------------------------------------------------------------------------
     */
 
-    echo html_writer::start_div('accordion-item');
+    echo html_writer::start_div('card');
 
     /*
     |--------------------------------------------------------------------------
@@ -501,15 +502,15 @@ if ($tab === 'guidance') {
             'button',
             get_string('checklistguidance', 'minstandards'),
             [
-                'class' => 'accordion-button collapsed',
+                'class' => 'btn btn-link text-start w-100',
                 'type' => 'button',
-                'data-bs-toggle' => 'collapse',
-                'data-bs-target' => '#checklistguidance',
+                'data-toggle' => 'collapse',
+                'data-target' => '#checklistguidance',
                 'aria-expanded' => 'false',
                 'aria-controls' => 'checklistguidance'
             ]
         ),
-        ['class' => 'accordion-header']
+        [ 'class' => 'card-header', 'id' => 'headingchecklist' ]
     );
 
     /*
@@ -519,14 +520,15 @@ if ($tab === 'guidance') {
     */
 
     echo html_writer::start_div(
-        'accordion-collapse collapse',
+        'collapse',
         [
             'id' => 'checklistguidance',
-            'data-bs-parent' => '#guidanceaccordion'
+            'data-bs-parent' => '#guidanceaccordion',
+            'aria-labelledby' => 'headingchecklist'
         ]
     );
 
-    echo html_writer::start_div('accordion-body');
+    echo html_writer::start_div('card-body');
 
     /*
     |--------------------------------------------------------------------------
@@ -634,7 +636,7 @@ if ($tab === 'guidance') {
     |--------------------------------------------------------------------------
     */
 
-    echo html_writer::start_div('accordion-item');
+    echo html_writer::start_div('card');
 
     /*
     |--------------------------------------------------------------------------
@@ -648,15 +650,15 @@ if ($tab === 'guidance') {
             'button',
             get_string('rubricguidance', 'minstandards'),
             [
-                'class' => 'accordion-button collapsed',
+                'class' => 'btn btn-link text-start w-100',
                 'type' => 'button',
-                'data-bs-toggle' => 'collapse',
-                'data-bs-target' => '#rubricguidance',
+                'data-toggle' => 'collapse',
+                'data-target' => '#rubricguidance',
                 'aria-expanded' => 'false',
                 'aria-controls' => 'rubricguidance'
             ]
         ),
-        ['class' => 'accordion-header']
+        [ 'class' => 'card-header', 'id' => 'headingrubric' ]
     );
 
     /*
@@ -666,14 +668,15 @@ if ($tab === 'guidance') {
     */
 
     echo html_writer::start_div(
-        'accordion-collapse collapse',
+        'collapse',
         [
             'id' => 'rubricguidance',
-            'data-bs-parent' => '#guidanceaccordion'
+            'data-bs-parent' => '#guidanceaccordion',
+            'aria-labelledby' => 'headingrubric'
         ]
     );
 
-    echo html_writer::start_div('accordion-body');
+    echo html_writer::start_div('card-body');
 
     /*
     |--------------------------------------------------------------------------
@@ -770,6 +773,7 @@ if ($tab === 'guidance') {
     */
 
     echo html_writer::end_div();
+
 
 
 
@@ -1201,5 +1205,9 @@ if ($tab === 'rubric') {
 
   
 }
+
+$PAGE->requires->jquery();
+
+$PAGE->requires->js_init_code(" require(['jquery'], function($) { $('.collapse').collapse(); }); ");
 
 echo $OUTPUT->footer();
