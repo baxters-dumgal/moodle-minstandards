@@ -42,6 +42,7 @@ $string['pluginadministration'] = 'Minimum Standards Administration';
 |--------------------------------------------------------------------------
 */
 
+$string['standardsrubricheader'] = 'Minimum Standards Checklist / Self-Reflection Rubric';
 $string['minimumstandards'] = 'Minimum Standards Checklist'; 
 $string['selfreflectionrubric'] = 'Self-Reflection Rubric';
 
