@@ -1208,6 +1208,4 @@ if ($tab === 'rubric') {
 
 $PAGE->requires->jquery();
 
-$PAGE->requires->js_init_code(" require(['jquery'], function($) { $('.collapse').collapse(); }); ");
-
 echo $OUTPUT->footer();
