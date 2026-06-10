@@ -390,7 +390,7 @@ if (
 echo $OUTPUT->header();
 
 echo $OUTPUT->heading(
-    get_string('checklisttab', 'minstandards')
+    get_string('standardsrubricheader', 'minstandards')
 );
 
 $tabs = [];
