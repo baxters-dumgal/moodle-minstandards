@@ -525,3 +525,27 @@ function minstandards_render_rubric_score_row(
     );
 }
 
+
+/**
+ * Calculate rubric total score.
+ *
+ * @param stdClass $rubric
+ * @return int
+ */
+function minstandards_calculate_rubric_score(
+    stdClass $rubric
+): int {
+
+    return
+        $rubric->welcomeinfo +
+        $rubric->grammar +
+        $rubric->presentation +
+        $rubric->learningresources +
+        $rubric->completion +
+        $rubric->assessment_rubric +
+        $rubric->accessibility_rubric +
+        $rubric->digitaltools +
+        $rubric->multimedia;
+}
+
+>>>>>>> 28c0055 (added simple unit tests)
