@@ -103,10 +103,6 @@ $tabs[] = new tabobject(
     get_string('guidancetab', 'minstandards') 
 );
 
-print_tabs(
-    [$tabs],
-    $tab
-);
 
 
 
