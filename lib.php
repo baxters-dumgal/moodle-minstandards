@@ -548,4 +548,3 @@ function minstandards_calculate_rubric_score(
         $rubric->multimedia;
 }
 
->>>>>>> 28c0055 (added simple unit tests)
