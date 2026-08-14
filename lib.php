@@ -224,7 +224,7 @@ if ($rubricscore >= 20) {
 
 } else {
 
-    $rubricclass = 'bg-secondary';
+    $rubricclass = 'bg-danger';
 }
 
 
