@@ -36,6 +36,12 @@ $string['modulename'] = 'Minimum Standards';
 $string['modulenameplural'] = 'Minimum Standards';
 $string['pluginadministration'] = 'Minimum Standards Administration';
 
+$string['minstandards:addinstance'] = 'Add an instance of Minimum Standards';
+$string['minstandards:editchecklist'] = 'Edit minimum standards checklist';
+$string['minstandards:editrubric'] = 'Edit self-reflection rubric';
+$string['minstandards:view'] = 'View Minimum Standards activity';
+$string['minstandards:viewrubric'] = 'View self-reflection rubric';
+
 /*
 |--------------------------------------------------------------------------
 | Tabs
